@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Handle site customization.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function specbee_custom_theme($existing, $type, $theme, $path) {
+
+  return [
+    'custom_timezone_theme' => [
+      'variables' => [
+        'current_datetime' => NULL,
+        'timezone' => NULL,
+        'country' => NULL,
+        'city' => NULL,
+      ],
+      'template' => 'custom-timezone-block',
+    ],
+  ];
+
+}

@@ -1,0 +1,5 @@
+name: Specbee Custom
+description: This is used for customization
+type: module
+core_version_requirement: ^8 || ^9
+package: Custom

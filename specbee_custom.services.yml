@@ -1,0 +1,4 @@
+services:
+  specbee_custom.timezone:
+    class: Drupal\specbee_custom\Services\CustomTimeZone
+    arguments: ['@config.factory', '@date.formatter']
